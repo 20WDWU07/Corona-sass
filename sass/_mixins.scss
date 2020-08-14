@@ -10,3 +10,8 @@
   left: $l;
 
 }
+
+@mixin column-size($w){
+  width: $w;
+  float:left;
+}

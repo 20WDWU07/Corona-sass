@@ -21,11 +21,12 @@
   @include container-size(70%,100vh);
   background: $light-color;
   float: left;
+  padding-left: 20px;
 }
 
 .clearfix::after{
   clear: both;
-  display: table;
+  // display: table;
   content: "";
 }
 
@@ -35,22 +36,39 @@
   // border: $border-1;
 }
 .container-home-logo{
-  width: 150px;
-  left: 40px;
-  top:10px;
-  position: fixed;
-  // border: 5px solid black;
+  width: 100%;
+
 }
 
 .top-nav{
-  width:80%;
-  margin:auto;
-  background: white;
-  position:relative;
-  top:300px;
+  width:100%;
+  margin-top: 300px;
+
+
 }
 
 .top-list{
-  width:100%;
+  width: 35%;
+  float:right;
+  // right:0;
+  background: whitesmoke;
+  // position:relative;
+  // top:300px;
 
+}
+
+.col1{
+  @include column-size(70%);
+}
+.col2{
+  @include column-size(30%);
+}
+
+.home-content-right{
+  // margin-top: 100px;
+  // width:70%;
+
+}
+.home-side-nav{
+  margin-top: 30px;
 }
