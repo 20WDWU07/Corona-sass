@@ -1,0 +1,12 @@
+.home-banner{
+  height: 100vh;
+  overflow-x: hidden;
+  @include back-layer(0,0);
+}
+
+
+
+.home-logo{
+  width: 100%;
+  border-radius: 30%;
+}

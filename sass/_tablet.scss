@@ -1,0 +1,56 @@
+.container{
+  width:100%;
+  // background: black;
+}
+
+// use of mixin
+.container-home{
+  @include container-size(100%,100vh);
+  // background: yellow;
+}
+
+//use of mixin
+.container-section-banner{
+  @include container-size(30%,100vh);
+  float: left;
+  border: $border-1;
+}
+
+// use of mixin
+.container-section-content{
+  @include container-size(70%,100vh);
+  background: $light-color;
+  float: left;
+}
+
+.clearfix::after{
+  clear: both;
+  display: table;
+  content: "";
+}
+
+//use of inheritance
+.container-home-banner{
+  @extend .container-home;
+  // border: $border-1;
+}
+.container-home-logo{
+  width: 150px;
+  left: 40px;
+  top:10px;
+  position: fixed;
+  // border: 5px solid black;
+}
+
+.top-nav{
+  width:80%;
+  margin:auto;
+  background: white;
+  position:relative;
+  top:300px;
+}
+
+.top-list{
+  width:100%;
+
+}
